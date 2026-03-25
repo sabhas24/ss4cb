@@ -14,7 +14,20 @@ def euclidean_gcd(first_number: int, second_number: int) -> int:
     -------
     int
         The GCD of first_number and second_number.
+
+    Raises
+    ------
+    ValueError
+        If either first_number or second_number is zero or negative.
     """
+    # Validate that both inputs are strictly positive integers;
+    # GCD is undefined for zero and not applicable to negative numbers.
+    if first_number <= 0 or second_number <= 0:
+        raise ValueError(
+            "Both numbers must be strictly positive integers (> 0). "
+            f"Received: first_number={first_number}, second_number={second_number}."
+        )
+
     # Keep iterating as long as the two values differ.
     # When they become equal, that value is the GCD.
     while first_number != second_number:
