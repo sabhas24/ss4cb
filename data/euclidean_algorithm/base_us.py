@@ -10,10 +10,8 @@ def euclidean_gcd(first_number: int, second_number: int) -> int:
     Returns:
         int: The GCD of first_number and second_number.
 
-    Raises
-    ------
-    ValueError
-        If either first_number or second_number is zero or negative.
+    Raises:
+        ValueError: If either first_number or second_number is zero or negative.
     """
     # Validate that both inputs are strictly positive integers;
     # GCD is undefined for zero and not applicable to negative numbers.
