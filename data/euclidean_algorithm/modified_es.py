@@ -38,7 +38,7 @@ def euclides_mcd(primer_numero: int, segundo_numero: int) -> int:
             primer_numero = primer_numero - segundo_numero
         else:
             # Si segundo_numero es mayor (o podrían ser iguales, manejado por la condición while),
-            # Reemplzar el segundo numero con la diferencia  (segundo_numero - primer_numero).
+            # Reemplazar el segundo número con la diferencia  (segundo_numero - primer_numero).
             # Esto refleja: MCD(primer_numero, segundo_numero) = MCD(primer_numero, segundo_numero - primer_numero)
             segundo_numero = segundo_numero - primer_numero
 
