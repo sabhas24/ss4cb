@@ -1,4 +1,4 @@
-def selection_sort(list):
+def selection_sort(array):
     """
     Sorts a list using the selection sort algorithm.
 
@@ -14,21 +14,21 @@ def selection_sort(list):
     - Space: O(1) (in-place sorting)
     """
 
-    n = len(list)
+    n = len(array)
 
     # Go through the entire list
     for i in range(n):
         # Suppose that the minimum is at the beginning of the unsorted zone
         
-        min_index= i
+        min_index = i
 
         # Search for the smallest element in the rest of the list
         for j in range(i + 1, n):
-            if list[j] < list[min_index]:
+            if array[j] < array[min_index]:
                 min_index = j
 
         # Swap if a smaller element was found
         if min_index != i:
-            list[i], list[min_index] = list[min_index], list[i]
+            array[i], array[min_index] = array[min_index], array[i]
 
-    return list
+    return array

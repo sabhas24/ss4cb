@@ -24,7 +24,7 @@ GPT-5.3
 Exigences: 
 * Fournit de la documentation en français conforme à la réglementation PEP-8 
 * Ne pas utiliser librairies 
-* Ajoutez des commentaires informatifs en françai
+* Ajoutez des commentaires informatifs en français
 ```
 
 ## Obfuscated version
